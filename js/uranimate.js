@@ -110,6 +110,7 @@ function UrAnimate() {
 						var prop 				= property.replace(/-[a-z]/,function(matched){ return matched[1].toUpperCase(); });
 						var	initialValue 		= _w.getComputedStyle(el)[prop]; // Get initial value
 						var	initialValueDigits 	= initialValue.match(/\d+([.]\d+)?/); // parse the digits
+						
 						// Check if there is any digit, otherwise use 0
 						initialValueDigits = initialValueDigits[0] ? parseFloat(initialValueDigits[0]) : 0;
 
@@ -122,9 +123,7 @@ function UrAnimate() {
 					});
 
 
-	/**
-	 * Animates the properties
-	 */
+	// Animates the properties
 	function animateProperties() {
 		var now 		= Date.now(),
 			elapsed 	= (now - startTime),
@@ -149,6 +148,8 @@ function UrAnimate() {
 		}		
 	}
 
+
+	// Initialize animation
 	_w.requestAnimationFrame(animateProperties);
 
 };
