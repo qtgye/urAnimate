@@ -1,0 +1,28 @@
+#test {
+	width: 300px;
+
+	.block {
+		width: 80%;
+	}
+
+	.block-bar {
+		height: 1px;
+		width: 80%;
+		margin-top: 15px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.block-object {
+		width: 15px;
+		height: 15px;
+		position: relative;
+		top: -8px;
+		margin-left: calc(10% - 8px);
+
+		&.on-left {
+			margin-left: calc(90% - 8px);
+		}
+	}
+
+}

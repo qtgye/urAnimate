@@ -1,0 +1,28 @@
+{
+  "name": "uranimate",
+  "description": "An animation library that enables you to add a custom easing function on your own!",
+  "main": "index.htm",
+  "authors": [
+    "Jayson Buquia"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "animate",
+    "animation",
+    "javascript",
+    "animation",
+    "vanilla"
+  ],
+  "homepage": "https://github.com/qtgye/urAnimate",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
