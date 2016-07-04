@@ -12,10 +12,8 @@ var $test 	= $('#test'),
 $run.on('click',function () {
 	[].forEach.call($object,function (el) {
 		el.urAnimate({
-			'margin-left' : ($block.width()*0.9)-8+'px', // calc( 90% - 8px )
-			'margin-top'  : '50px'
-		},[1000],[
-			'sfsf',
+			'margin-left'	: ($block.width()*0.9)-8+'px' // calc( 90% - 8px )
+		},1000,[
 			// elastic
 			function (t,b,c,d) {
 				var ts=(t/=d)*t;
