@@ -1,7 +1,7 @@
 # urAnimate
 A customizable animation library.
 
-
+---
 
 ### Features
 - Lightweight : ~2kb file size (minified).
