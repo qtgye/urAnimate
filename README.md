@@ -1,16 +1,17 @@
 # urAnimate
 A customizable animation library.
 
----
+
 
 ### Features
-- Lightweight - ~2kb file size (minified).
- - Standalone - no jQuey, just pure vanilla. Works well with jQuery too.
- - Flexible - Use it as a function or an HTMLElement method.
- - Customizable - Use your own easing functions, individual durations, individual easings, the way you want it.
+- Lightweight : ~2kb file size (minified).
+- Standalone : no jQuey, just pure vanilla. Works well with jQuery too.
+- Flexible - Use it as a function or an HTMLElement method.
+- Customizable - Use your own easing functions, individual durations, individual easings, the way you want it.
 
 ### Installation
 > *Currently at alpha version 1.0.0-alpha.1*
+
 - You may download the file [here][uranimateJS]
 - or install it via bower: `$ bower install uranimate`
 
