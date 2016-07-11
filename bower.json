@@ -22,7 +22,7 @@
     "test",
     "tests"
   ],
-  "ependencies": {
+  "devDependencies": {
     "bootstrap": "^3.3.6"
   }
 }
