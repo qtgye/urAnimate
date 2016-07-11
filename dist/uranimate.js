@@ -44,7 +44,7 @@ var builtInEasings = {
 					return b+c*(tc + -3*ts + 3*t);
 				},	
 
-	'InOutCubic' : function (t,b,c,d) {
+	'inOutCubic' : function (t,b,c,d) {
 					var ts=(t/=d)*t;
 					var tc=ts*t;
 					return b+c*(-2*tc + 3*ts);
