@@ -17,6 +17,17 @@ var is = (function() {
   })();
 
 
+// shim layer with setTimeout fallback
+_w.requestAnimationFrame = (function(){
+  return  _w.requestAnimationFrame       ||
+          _w.webkitRequestAnimationFrame ||
+          _w.mozRequestAnimationFrame    ||
+          function( callback ){
+            _w.setTimeout(callback, 1000 / 60);
+          };
+})();
+
+
 
 
 
