@@ -187,7 +187,7 @@ function getNewValue(progress,initialValue,targetDifference,easing) {
 
 // Bind to HTMLElement and jQuery element
 HTMLElement.prototype.urAnimate = _w.UrAnimate = UrAnimate;
-if ( $ == jQuery ) { jQuery.fn.urAnimate = UrAnimate; }
+if ( _w.$ && _w.$ == _w.jQuery ) { _w.jQuery.fn.urAnimate = UrAnimate; }
 
 
 })(window,document);
