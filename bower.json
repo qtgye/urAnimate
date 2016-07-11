@@ -24,7 +24,8 @@
     "scss",
     "lib",
     "js",
-    "css"
+    "css",
+    "package.json"
   ],
   "devDependencies": {
     "bootstrap": "^3.3.6"
