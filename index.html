@@ -20,7 +20,7 @@
 
         <header>
           <h1>Uranimate</h1>
-          <h2>An animation library that enables you to add a custom easing function on your own!</h2>
+          <h2>A customizable animation library.</h2>
         </header>
 
         <section id="downloads" class="clearfix">
@@ -44,16 +44,98 @@
 				</ul>
 			</p>
 
+			<hr>
+
 			<p>
 				<h3>Installation</h3>
 
-				<ul>
+				<ul>					
 					<li>
-						You may download the file <a href="https://raw.githubusercontent.com/qtgye/urAnimate/gh-pages/dist/uranimate.min.js">here</a>, <br>
-						or install it via <a href="https://bower.io/">bower</a>: <code>$ bower install //</code>
-					</li>
+						You may download the file <a href="https://raw.githubusercontent.com/qtgye/urAnimate/gh-pages/dist/uranimate.min.js" target="_blank">here</a>, <br>
+						or install it via <a href="https://bower.io/">bower</a>: <code>$ bower install uranimate</code>
+					</li><br>
+					<li>Currently at alpha version <a href="https://github.com/qtgye/urAnimate/tree/1.0.0-alpha.1" target="_blank">1.0.0-alpha.1</a></li>
 				</ul>
 			</p>
+
+			<hr>
+
+			<p>
+				<h3>Usage</h3>
+
+				<p>
+					UrAnimate can be used as a function or an HTMLElement/jQueryElement method.
+				</p>
+
+				<ol>
+					<li>
+						As a function: <br>
+						<code>UrAnimate( element, properties, duration, easing )</code><br><br>
+<pre>
+var element = document.getElementById('myElement');
+	
+UrAnimate( element, { 'left' : '10px' }, 300, 'InOutCubic' );
+</pre>
+						
+					</li>
+					<li>
+						As an HTMLElement/jQueryElement method: <br>
+						<code>HTMLElement.urAnimate( properties, duration, easing )</code><br><br>
+<pre>
+var element1 = document.getElementById('myElement1'),
+    element2 = $('#myElement2');
+	
+element1.urAnimate( { 'left' : '10px' }, 300, 'inOutCubic' );
+element2.urAnimate( { 'top' : '10px' }, 500, 'outCubic' );
+</pre>
+						
+					</li>
+				</ol>
+			</p>
+
+			<hr>
+
+			<p>
+				<h3>Custom Easing Functions</h3>
+
+				<p>
+					UrAnimate has four default easing functions: <em>linear, inCubic, outCubic, inOutCubic</em>. 
+					It uses <a href="http://robertpenner.com/easing/" target="_blank">Robert Penner</a>'s easing functions for its animation (so is jQuery) .
+					You may pass a function in the same format as the easing parameter, for example:
+<pre>
+HTMLElement.urAnimate( { 'left':'30px' }, 500, outElasticBig );
+
+function outElasticBig (t, b, c, d) {
+    var ts=(t/=d)*t;
+    var tc=ts*t;
+    return b+c*(56*tc*ts + -175*ts*ts + 200*tc + -100*ts + 20*t);
+}
+</pre>
+				</p>
+
+			</p>
+
+			<hr>
+
+			<p>
+				<h3>Individual durations and easings</h3>
+
+				<p>
+					You can set different duration and easing for each properties.
+					Each duration/easing will follow the properties in the order you specified. In the given example below,
+					<code>'left':'10px'</code> will take 300ms, while <code>'top':'15px'</code> will take 500ms.<br>
+<pre>
+HTMLElement.urAnimate(
+    { 'left':'10px', 'top':'15px' },
+    [ 300, 500 ],
+    [ 'linear', 'inCubic' ]
+)
+</pre>
+				</p>
+
+			</p>
+
+
 
         </section>
 
