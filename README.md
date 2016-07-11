@@ -66,3 +66,12 @@ HTMLElement.urAnimate(
     [ 'linear', 'inCubic' ]
 )
 ```
+
+---
+---
+
+### To Do:
+- Support for animation ended callback
+- Support for css transforms
+
+
