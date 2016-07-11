@@ -1,21 +1,22 @@
-# urAnimate
+urAnimate
+===
 A customizable animation library.
 
----
-
+===
 ### Features
 - Lightweight : ~2kb file size (minified).
 - Standalone : no jQuey, just pure vanilla. Works well with jQuery too.
 - Flexible - Use it as a function or an HTMLElement method.
 - Customizable - Use your own easing functions, individual durations, individual easings, the way you want it.
 
+===
 ### Installation
 > *Currently at alpha version 1.0.0-alpha.1*
 
 - You may download the file [here][uranimateJS]
 - or install it via bower: `$ bower install uranimate`
 
-
+===
 ### Usage
 UrAnimate can be used as a function or an HTMLElement/jQueryElement method.
 
@@ -34,6 +35,7 @@ element1.urAnimate( { 'left' : '10px' }, 300, 'inOutCubic' );
 element2.urAnimate( { 'top' : '10px' }, 500, 'outCubic' );
 ```
 
+===
 ### Custom Easing Functions
 UrAnimate has four default easing functions: ***linear, inCubic, outCubic, inOutCubic***. It uses [Robert Penner][RobertPenner]'s easing functions for its animation (so is jQuery) . You may pass a function in the same format as the easing parameter, for example:
 
@@ -49,7 +51,7 @@ function outElasticBig (t, b, c, d) {
 }
 ```
 
-
+===
 ### Individual durations and easings
 
 You can set different duration and easing for each properties. Each duration/easing will follow the properties in the order you specified. In the given example below, `'left':'10px'` will take **300ms**, while` 'top':'15px'` will take **500ms**.
