@@ -14,7 +14,10 @@ A customizable animation library.
 > *Currently at alpha version 1.0.0-alpha.1*
 
 - You may download the file [here][uranimateJS]
-- or install it via bower: `$ bower install uranimate`
+- or install it via [bower][bower]: `$ bower install uranimate`
+
+[uranimateJS]:<https://raw.githubusercontent.com/qtgye/urAnimate/gh-pages/dist/uranimate.min.js>
+[bower]:<https://bower.io/>
 
 ===
 ### Usage
