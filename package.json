@@ -1,6 +1,6 @@
 {
   "name": "uranimate",
-  "version": "1.0.0",
+  "version": "1.0.0-beta.1",
   "description": "An animation library that enables you to add a custom easing function on your own!",
   "main": "index.js",
   "scripts": {
