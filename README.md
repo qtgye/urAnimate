@@ -11,7 +11,7 @@ A customizable animation library.
 
 ===
 ### Installation
-> *Currently at alpha version 1.0.0-beta.1*
+> *Currently at beta version 1.0.0-beta.1*
 
 - You may download the file [here][uranimateJS]
 - or install it via [bower][bower]: `$ bower install uranimate`
