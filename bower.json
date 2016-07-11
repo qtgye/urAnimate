@@ -3,7 +3,7 @@
   "description": "An animation library that enables you to add a custom easing function on your own!",
   "main": "index.htm",
   "authors": [
-    "Jayson Buquia"
+    "Jayson Buquia <buquia.jace@gmail.com>"
   ],
   "license": "ISC",
   "keywords": [
@@ -22,7 +22,7 @@
     "test",
     "tests"
   ],
-  "dependencies": {
+  "ependencies": {
     "bootstrap": "^3.3.6"
   }
 }
